@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Napul'è</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header>
@@ -14,7 +15,9 @@
             <li><a href="/pizzeria">La pizzeria</a></li>
         </ul>
     </header>
-    <h2>Dove mangerete</h2>
-    <img src="/images/ristorante.jpg" alt="">
+    <div class="ristorante">
+        <h2>Dove mangerete</h2>
+        <img src="/images/ristorante.jpg" alt="">
+    </div>
 </body>
 </html>

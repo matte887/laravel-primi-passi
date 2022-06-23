@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Napul'è</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header>
@@ -14,14 +15,17 @@
             <li><a href="/pizzeria">La pizzeria</a></li>
         </ul>
     </header>
-    <h1>Benvenuto nella pizzeria {{$nomePizzeria}} del maestro pizzaiolo {{$nomePizzaiolo}}</h1>
     
-    @if ($siamoAperti)
-    <h3>Oggi siamo aperti :)</h3>
-        
-    @else
-    <h3>Oggi siamo chiusi :(</h3>
-        
-    @endif
+    <div class="home-container background">
+        <h1>Benvenuto nella pizzeria {{$nomePizzeria}} del maestro pizzaiolo {{$nomePizzaiolo}}</h1>
+    
+        @if ($siamoAperti)
+        <h3>Oggi siamo aperti :)</h3>
+            
+        @else
+        <h3>Oggi siamo chiusi :(</h3>
+            
+        @endif
+    </div>
 </body>
 </html>
