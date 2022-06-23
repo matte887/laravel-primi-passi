@@ -14,14 +14,7 @@
             <li><a href="/pizzeria">La pizzeria</a></li>
         </ul>
     </header>
-    <h1>Benvenuto nella pizzeria {{$nomePizzeria}} del maestro pizzaiolo {{$nomePizzaiolo}}</h1>
-    
-    @if ($siamoAperti)
-    <h3>Oggi siamo aperti :)</h3>
-        
-    @else
-    <h3>Oggi siamo chiusi :(</h3>
-        
-    @endif
+    <h2>Dove mangerete</h2>
+    <img src="/images/ristorante.jpg" alt="">
 </body>
 </html>

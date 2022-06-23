@@ -14,5 +14,43 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'nomePizzeria' => 'Napul\'è',
+        'nomePizzaiolo' => 'Mario Esposito',
+        'siamoAperti' => true
+    ];
+    return view('home', $data);
+});
+
+Route::get('/menu', function() {
+    $menu = [
+        'pizze' => [
+            [
+                'nome' => 'Marinara',
+                'ingredienti' => 'Pomodoro, Aglio, Origano, Olio EVO'
+            ],
+            [
+                'nome' => 'Margherita',
+                'ingredienti' => 'Pomodoro, Mozzarella, Grana, Basilico, Olio EVO'
+            ],
+            [
+                'nome' => 'Napoli',
+                'ingredienti' => 'Pomodoro, Mozzarella, Acciughe, Capperi, Basilico, Olio EVO'
+            ],
+            [
+                'nome' => '4 stagioni',
+                'ingredienti' => 'Pomodoro, Mozzarella, Prosciutto cotto, Funghi, Carciofi, Olive nere'
+            ],
+            [
+                'nome' => '4 formaggi',
+                'ingredienti' => 'Pomodoro, Mozzarella, Gorgonzola, Scamorza, Grana'
+            ]
+        ],
+        'dolci' => ['Tiramisù', 'Panna cotta', 'Caprese', 'Babà']
+    ];
+    return view('menu', $menu);
+});
+
+Route::get('/pizzeria', function () {
+    return view('pizzeria');
 });
