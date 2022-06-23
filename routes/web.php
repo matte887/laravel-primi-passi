@@ -20,7 +20,7 @@ Route::get('/', function () {
         'siamoAperti' => true
     ];
     return view('home', $data);
-});
+})->name('home');
 
 Route::get('/menu', function() {
     $menu = [
@@ -49,8 +49,8 @@ Route::get('/menu', function() {
         'dolci' => ['Tiramisù', 'Panna cotta', 'Caprese', 'Babà']
     ];
     return view('menu', $menu);
-});
+})->name('menu');
 
 Route::get('/pizzeria', function () {
     return view('pizzeria');
-});
+})->name('restaurant');

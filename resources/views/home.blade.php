@@ -10,9 +10,9 @@
 <body>
     <header>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/menu">Il menù</a></li>
-            <li><a href="/pizzeria">La pizzeria</a></li>
+            <li><a href="{{route('home')}}">Home</a></li>
+            <li><a href="{{route('menu')}}">Il menù</a></li>
+            <li><a href="{{route('restaurant')}}">La pizzeria</a></li>
         </ul>
     </header>
     
